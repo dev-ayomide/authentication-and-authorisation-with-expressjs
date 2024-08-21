@@ -19,29 +19,3 @@ Without proper authorization, the "Delete User" functionality can be abused by m
 Conclusion
 
 In conclusion, while authentication is an essential step in securing the "Delete User" functionality, it's not enough on its own. Authorization plays a critical role in determining what actions a user can perform, and it's essential to implement additional checks to ensure that only authorized users can delete other users.
-
-Diagram: Authentication and Authorization Flow
-          +---------------+
-          |  User Request  |
-          +---------------+
-                  |
-                  |
-                  v
-          +---------------+
-          |  Authentication  |
-          |  (Verify Identity) |
-          +---------------+
-                  |
-                  |
-                  v
-          +---------------+
-          |  Authorization  |
-          |  (Check Permissions) |
-          +---------------+
-                  |
-                  |
-                  v
-          +---------------+
-          |  Delete User    |
-          |  (Authorized Action) |
-          +---------------+
